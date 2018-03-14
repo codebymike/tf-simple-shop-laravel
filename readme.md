@@ -1,9 +1,9 @@
-## TF - Simple Shop (in Laravel)
+# TF - Simple Shop (in Laravel)
 
-# Goal
+## Goal
 Extend the existing Laravel application so that it can calculate the total for a sample shopping basket, and save the basket contents and total to the database.
 
-# Guide
+## Guide
 The existing Laravel application has the following things already set up:
 - A Dockerised basic installation of Laravel (setup instructions below)
 - A small product catalogue which can be accessed here: http://localhost:8080/api/products
@@ -34,25 +34,23 @@ If you have a GitHub/Bitbucket account please put the code in a public repositor
 
 If you have any questions or problems - email me at mthomas[at]toxicfox.co.uk
 
-# Marking Criteria
+## Marking Criteria
 
 - Comprehension of the task, and technical proficiency in meeting it
 - Adherence to Laravel best practises
 - Presence of a suitable level of testing.
 
-# Setup Instructions
+## Setup Instructions
 
 - [Get Docker](https://www.docker.com/get-docker)
 - Download this repository to a local folder
 - Install Laravel dependencies by running
 ```
 docker run --rm -v ${PWD}:/app composer update
-
 ```
 - Start Docker
 ```
 docker-compose up
-
 ```
 - Create the database tables
 ```
@@ -69,7 +67,7 @@ docker-compose exec app ./vendor/bin/phpunit
 ```
 - To inspect the DB from outside Docker, just use the .env DB credentials and host 127.0.0.1:33061
 
-# Resources
+## Resources
 
 - [Docker Basics](https://docs.docker.com/get-started/)
 - [Laravel](https://laravel.com/docs/5.6)
